@@ -1,17 +1,35 @@
 <ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>
-      Tab 2
+  <ion-toolbar class="color-toolbar">
+    <ion-title class="titulos">
+      NUEVA NOTA
     </ion-title>
+    <div class="element">
+      <!-- CERRAR SESIÓN -->
+      <ion-button class="colorFB" color="warning" size="small" (click)="this.logout()">
+        <ion-icon class="salirsesion" name="exit-outline"></ion-icon>
+        CERRAR SESIÓN</ion-button>
+    </div>
   </ion-toolbar>
 </ion-header>
 
 <ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Tab 2</ion-title>
-    </ion-toolbar>
-  </ion-header>
-
-  <app-explore-container name="Tab 2 page"></app-explore-container>
+  <form [formGroup]="task" (ngSubmit)="this.sendForm()">
+    <ion-item>
+      <ion-input type="text" formControlName="title" placeholder="Título"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-datetime cancelText="cancelar" doneText="confirmar" 
+       type="text" formControlName="date" placeholder="Fecha" display-format="DD/MM/YYYY">
+      </ion-datetime>
+    </ion-item>
+    <ion-item>
+      <ion-textarea formControlName="description"
+       placeholder="Descripción"
+       autocapitalize="true"
+      auto-grow="true"></ion-textarea>
+    </ion-item>
+    <div style="text-align: right;">
+    <ion-button shape="round" class="borderboton" fill="outline" type="submit" [disabled]="!task.valid">Añadir</ion-button>
+  </div>
+  </form>
 </ion-content>

@@ -24,3 +24,63 @@
 @import "~@ionic/angular/css/text-alignment.css";
 @import "~@ionic/angular/css/text-transformation.css";
 @import "~@ionic/angular/css/flex-utils.css";
+
+.loading-wrapper{
+    background: transparent !important;
+    -webkit-box-shadow: none !important;
+    box-shadow: none !important;
+}
+
+//_______________________________________NUEVO
+
+.color-toolbar{
+    --background: #283747;
+}
+
+.tabbarcolor{
+    --ion-background-color: #283747;
+    --color: white;
+    --color-selected: #FFC409;
+}
+
+.titulos{
+    color: white;
+    text-align: center;
+    font-weight: bold;
+    margin-top: 7px;
+    padding: 5px;
+    font-size: 16px;
+}
+
+.titulos2{
+    color: #FFC409;
+    text-align: left;
+    font-weight: bold;
+    padding: 5px;
+    font-size: 16px;
+}
+
+.element{
+    padding: 5px;
+    margin: 5px;
+}
+
+.borderboton{
+    --border-color: #283747;
+    color: #283747;
+    margin: 15px;
+}
+
+.batras{
+    color: white;
+}
+
+//_______________________________BOTÓN DE CERRAR SESIÓN
+.colorFB{
+    font-weight: bold;
+}
+
+.salirsesion{
+    padding-right: 6px;
+}
+//_______________________________BOTÓN DE CERRAR SESIÓN

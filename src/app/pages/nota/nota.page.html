@@ -1,0 +1,19 @@
+<ion-header>
+  <ion-toolbar class="color-toolbar">
+    <ion-button shape="round" (click)="this.salir()" color="warning">
+      <ion-icon name="arrow-undo-outline"></ion-icon>
+    </ion-button>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-item>
+    <h1>{{nota.titulo}}</h1>
+  </ion-item>
+  <ion-item>
+    <p>{{nota.fecha}}</p> <br>
+  </ion-item>
+  <ion-item>
+    <p>{{nota.texto}}</p>
+  </ion-item>
+</ion-content>

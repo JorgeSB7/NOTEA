@@ -1,0 +1,32 @@
+<ion-header>
+  <ion-toolbar class="color-toolbar">
+      <ion-title class="titulos2">EDITAR NOTA</ion-title>
+      <!-- BOTÓN ATRÁS -->
+      <ion-buttons slot="start">
+        <ion-button class="batras" (click)="this.botonatras()">
+            <ion-icon name="arrow-back"></ion-icon>
+        </ion-button>
+      </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <form [formGroup]="task" (ngSubmit)="this.sendForm()">
+    <ion-item>
+      <ion-input type="text" formControlName="title" placeholder="Título"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-datetime cancelText="cancelar" doneText="confirmar" 
+       type="text" formControlName="date" placeholder="Fecha" display-format="DD/MM/YYYY">
+      </ion-datetime>
+    </ion-item>
+    <ion-item>
+      <ion-textarea formControlName="description" placeholder="Descripción" autocapitalize="true" auto-grow="true">
+      </ion-textarea>
+    </ion-item>
+    <div style="text-align: right;">
+      <ion-button shape="round" class="borderboton" fill="outline" type="submit" [disabled]="!task.valid">Modificar
+      </ion-button>
+    </div>
+  </form>
+</ion-content>
