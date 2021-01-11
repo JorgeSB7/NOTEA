@@ -3,20 +3,18 @@ import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 
 import { IonicModule } from '@ionic/angular';
-
-import { NotaPageRoutingModule } from './nota-routing.module';
-
-import { NotaPage } from './nota.page';
 import { TranslateModule } from '@ngx-translate/core';
+import { AyudaPageRoutingModule } from './ayuda-routing.module';
+import { AyudaPage } from './ayuda.page';
 
 @NgModule({
   imports: [
     CommonModule,
     FormsModule,
     IonicModule,
-    TranslateModule,
-    NotaPageRoutingModule
+    AyudaPageRoutingModule,
+    TranslateModule
   ],
-  declarations: [NotaPage]
+  declarations: [AyudaPage]
 })
-export class NotaPageModule {}
+export class AyudaPageModule {}

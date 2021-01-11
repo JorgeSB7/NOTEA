@@ -9,6 +9,8 @@ import { Router } from '@angular/router';
 import { AlertController } from '@ionic/angular';
 import { LoadingController, ToastController } from '@ionic/angular';
 import { NotaPage } from '../pages/nota/nota.page';
+import { AyudaPage } from '../pages/ayuda/ayuda.page';
+import { ToastService } from '../services/toast.service';
 
 @Component({
   selector: 'app-tab1',
@@ -26,8 +28,7 @@ export class Tab1Page implements OnInit {
     private authS: AuthService,
     private router: Router,
     private alertController: AlertController,
-    public loadingController: LoadingController,
-    public toastController: ToastController) {
+    public toastS: ToastService) {
 
   }
 
@@ -65,7 +66,6 @@ export class Tab1Page implements OnInit {
 
   ngOnInit() {
     this.cargaDatos();
-    //NATIVE STORAGE
     this.nativeStorage.setItem('myitem', { property: 'value', anotherProperty: 'anotherValue' })
       .then(
         () => console.log('Stored item!'),
@@ -120,13 +120,15 @@ export class Tab1Page implements OnInit {
       this.listaNotas = tmp;
       this.items = this.listaNotas;
       //_______________________TOAST NOTA BORRADA
-      this.loadingController.dismiss();
-      this.presentToast("Nota eliminada correctamente", "success");
+      this.toastS.loadingController.dismiss();
+      this.toastS.presentToast("Nota eliminada correctamente", "success");
     })
       .catch(err => {
         //Error
       })
   }
+
+  //_________________________________EDITAR NOTA
   async editaNota(nota: Nota) {
     const modal = await this.modalController.create({
       component: EditNotaPage,
@@ -137,26 +139,7 @@ export class Tab1Page implements OnInit {
     });
     return await modal.present();
   }
-
-  //__________________________________________________________TOAST
-  async presentLoading() {
-    const loading = await this.loadingController.create({
-      cssClass: 'my-custom-class',
-      message: '',
-      spinner: "crescent"
-    });
-    await loading.present();
-  }
-  async presentToast(msg: string, col: string) {
-    const toast = await this.toastController.create({
-      message: msg,
-      color: col,
-      duration: 2000,
-      position: "top"
-    });
-    toast.present();
-  }
-  //__________________________________________________________TOAST
+  //_________________________________EDITAR NOTA
 
   //__________________________________________________________SEARCHBAR
   getItems(ev: any) {
@@ -170,16 +153,18 @@ export class Tab1Page implements OnInit {
   }
   //__________________________________________________________SEARCHBAR
 
-  //__________________________________________________________ENTRARNOTA
-  async entraNota(nota: Nota) {
+  //__________________________________________________________AMPLIAR NOTA
+  public ampliaNota(nota: Nota){
+    this.notasS.entraNota(nota);
+  }
+  //__________________________________________________________AMPLIAR NOTA
+
+  //__________________________________________________________AYUDA
+  async entraAyuda() {
     const modal = await this.modalController.create({
-      component: NotaPage,
-      cssClass: 'my-custom-class',
-      componentProps: {
-        nota: nota
-      }
+      component: AyudaPage,
     });
     return await modal.present();
   }
-  //__________________________________________________________ENTRARNOTA
+  //__________________________________________________________AYUDA
 }

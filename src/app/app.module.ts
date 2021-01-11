@@ -19,12 +19,33 @@ import { GooglePlus } from '@ionic-native/google-plus/ngx';
 import { AuthService } from './services/auth.service';
 import { Flashlight } from '@ionic-native/flashlight/ngx';
 import { NotaPage } from './pages/nota/nota.page';
+
+import { HttpClientModule, HttpClient } from '@angular/common/http';
+import { TranslateModule, TranslateLoader } from '@ngx-translate/core';
+import { TranslateHttpLoader } from '@ngx-translate/http-loader';
+import { IonicStorageModule } from '@ionic/storage';
+import { TextToSpeech } from '@ionic-native/text-to-speech/ngx';
+import { Geolocation } from '@ionic-native/geolocation/ngx';
+
+export function createTranslateLoader(http: HttpClient) {
+  return new TranslateHttpLoader(http, './assets/i18n/', '.json');
+}
+
 @NgModule({
   declarations: [AppComponent,EditNotaPage,NotaPage],
   entryComponents: [EditNotaPage,NotaPage],
   imports: [BrowserModule, 
     ReactiveFormsModule,
-    IonicModule.forRoot(), 
+    IonicModule.forRoot(),
+    HttpClientModule,
+    IonicStorageModule.forRoot(),
+    TranslateModule.forRoot({
+      loader: {
+        provide: TranslateLoader,
+        useFactory: (createTranslateLoader),
+        deps: [HttpClient]
+      }
+    }),
     AppRoutingModule,AngularFireModule.initializeApp(environment.firebaseConfig),
     AngularFirestoreModule],
   providers: [
@@ -35,6 +56,8 @@ import { NotaPage } from './pages/nota/nota.page';
     GooglePlus,
     AuthService,
     Flashlight,
+    TextToSpeech,
+    Geolocation,
     { provide: RouteReuseStrategy, useClass: IonicRouteStrategy }
   ],
   bootstrap: [AppComponent]

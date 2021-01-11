@@ -1,3 +1,41 @@
-ion-button{
-    margin-left: 10px;
+ion-button {
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+ion-item {
+    margin-right: 14px;
+}
+
+.notaTIT {
+    font-weight: bold;
+    font-size: 17px;
+    text-align: left;
+}
+
+.notaFEC {
+    font-size: 14px;
+    text-align: right;
+}
+
+.notaTEX {
+    font-size: 16px;
+    text-align: justify;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+ion-header {
+    margin-bottom: 15px;
+}
+
+.UBI {
+    font-family: youregoneFont;
+    text-align: center;
+    margin-top: 25px;
+    margin-bottom: 10px;
+}
+
+.ubiM {
+    margin-top: 20px;
 }

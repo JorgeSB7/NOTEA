@@ -1,11 +1,13 @@
 <ion-header>
-  <ion-toolbar class="color-toolbar">
-    <ion-title class="titulos">BIENVENIDO A NOTEA</ion-title>
+  <ion-toolbar>
+    <ion-title class="titulos">{{'Noteaintro.title' | translate}}</ion-title>
+    <p class="titulos2">{{'Noteaintro2.title' | translate}}</p>
   </ion-toolbar>
 </ion-header>
 
 <ion-content>
-  <ion-button class="botongoole" expand="full" (click)="this.login()">
+  <ion-button class="botongoole" expand="full" (click)="this.login()" shape="round">
     <ion-icon class="icongoogle" name="logo-google"></ion-icon>
-    Cuenta de Google</ion-button>
+    {{'CuentaGoogle.title' | translate}}
+  </ion-button>
 </ion-content>

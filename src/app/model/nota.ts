@@ -3,6 +3,7 @@ export interface Nota{
     titulo:string,
     texto:string,
     fecha:string,
-    coordenadas?:any,
+    latitude?:any;
+    longitude?:any;
     imagen?:any;
 }

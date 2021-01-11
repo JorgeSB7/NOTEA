@@ -1,0 +1,125 @@
+{
+    "configuracion": {
+        "title": "CONFIGURACIÓN"
+    },
+    "Usuario": {
+        "title": "Usuario"
+    },
+    "Temas": {
+        "title": "Temas"
+    },
+    "Herramientas": {
+        "title": "Herramientas"
+    },
+    "Linterna": {
+        "title": "Linterna"
+    },
+    "oscuro": {
+        "title": "Modo Oscuro"
+    },
+    "marvel": {
+        "title": "Modo Marvel"
+    },
+    "nature": {
+        "title": "Modo Nature"
+    },
+    "Idioma": {
+        "title": "Idioma"
+    },
+    "IdS": {
+        "title": "Eligir idioma"
+    },
+    "es": {
+        "title": "Español"
+    },
+    "en": {
+        "title": "Inglés"
+    },
+    "NuevaN": {
+        "title": "NUEVA NOTA"
+    },
+    "Titulo": {
+        "title": "Título"
+    },
+    "Fecha": {
+        "title": "Fecha"
+    },
+    "cancelar": {
+        "title": "cancelar"
+    },
+    "confirmar": {
+        "title": "confirmar"
+    },
+    "Descripcion": {
+        "title": "Descripción"
+    },
+    "anadirN": {
+        "title": "Añadir"
+    },
+    "TabsNotas": {
+        "title": "Notas"
+    },
+    "TabsAnadir": {
+        "title": "Añadir"
+    },
+    "TabsConfi": {
+        "title": "Configuración"
+    },
+    "ListadeNotas": {
+        "title": "LISTA-NOTAS"
+    },
+    "EditarNota": {
+        "title": "EDITAR NOTA"
+    },
+    "Modificar": {
+        "title": "MODIFICAR"
+    },
+    "Noteaintro": {
+        "title": "BIENVENIDO A NOTEA "
+    },
+    "Noteaintro2": {
+        "title": "TU APLICACIÓN DE NOTAS PERSONALIZADA"
+    },
+    "CuentaGoogle": {
+        "title": "CUENTA DE GOOGLE"
+    },
+    "BuscarN": {
+        "title": "Buscar"
+    },
+    "AyudaN": {
+        "title": "AYUDA"
+    },
+    "AEN": {
+        "title": "Editar Nota"
+    },
+    "ABN": {
+        "title": "Borrar Nota"
+    },
+    "AVN": {
+        "title": "Ver Nota"
+    },
+    "ANN": {
+        "title": "Linterna"
+    },
+    "AEND": {
+        "title": "Deslizar nota hacia la izquierda"
+    },
+    "ABND": {
+        "title": "Deslizar nota hacia la derecha"
+    },
+    "AVND": {
+        "title": "Pulsar sobre la nota para ampliar y/o escuchar"
+    },
+    "ANND": {
+        "title": "Se puede utilizar la linterna en 'Añadir'"
+    },
+    "botonconU": {
+        "title": "CON UBICACIÓN"
+    },
+    "botoncsinU": {
+        "title": "SIN UBICACIÓN"
+    },
+    "botonmodi": {
+        "title": "MODIFICAR"
+    }
+}

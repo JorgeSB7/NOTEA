@@ -31,56 +31,27 @@
     box-shadow: none !important;
 }
 
+
 //_______________________________________NUEVO
-
-.color-toolbar{
-    --background: #283747;
+::placeholder{
+    color: var(--ion-placeholder-color) !important;
 }
 
-.tabbarcolor{
-    --ion-background-color: #283747;
-    --color: white;
-    --color-selected: #FFC409;
+ion-label p{
+    color: var(--ion-text-color) !important;
 }
 
-.titulos{
-    color: white;
-    text-align: center;
-    font-weight: bold;
-    margin-top: 7px;
-    padding: 5px;
-    font-size: 16px;
+//_______________________________________FONTS
+
+@font-face {
+    font-family: 'gnuolaneFont';
+    //font-style: normal;
+    //font-weight: normal;
+    src: url('assets/NewFonts/gnuolane.ttf');
 }
 
-.titulos2{
-    color: #FFC409;
-    text-align: left;
-    font-weight: bold;
-    padding: 5px;
-    font-size: 16px;
+@font-face {
+    font-family: 'youregoneFont';
+    font-style: initial;
+    src: url('assets/NewFonts/youregone.ttf');
 }
-
-.element{
-    padding: 5px;
-    margin: 5px;
-}
-
-.borderboton{
-    --border-color: #283747;
-    color: #283747;
-    margin: 15px;
-}
-
-.batras{
-    color: white;
-}
-
-//_______________________________BOTÓN DE CERRAR SESIÓN
-.colorFB{
-    font-weight: bold;
-}
-
-.salirsesion{
-    padding-right: 6px;
-}
-//_______________________________BOTÓN DE CERRAR SESIÓN

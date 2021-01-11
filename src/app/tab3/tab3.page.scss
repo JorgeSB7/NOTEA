@@ -1,8 +1,49 @@
-.luz {
-    padding-right: 6px;
+.iconT3 {
+    padding-right: 15px;
+    color: var(--ion-text-color) !important;
 }
 
-.usercolor{
-    --ion-background-color: #6A5C5B;
-    color: white;
+ion-list-header {
+    font-weight: bold;
+    font-size: 16px;
+    color: rgb(172, 170, 170);
 }
+
+ion-list {
+    margin-top: 2px;
+    margin-left: 4px;
+    margin-right: 5px;
+    margin-bottom: 7px;
+}
+
+ion-item {
+    margin-right: 12px;
+}
+
+.itemI {
+    margin-left: 12px;
+}
+
+.name {
+    font-weight: bold;
+}
+
+.email {
+    font-size: 15px;
+    color: var(--ion-toolbar-border-color) !important;
+}
+
+
+ion-avatar img{
+    border-radius: 30% !important;
+    //width: 50px !important;
+    //height: 50px !important;
+    border: 2px solid rgb(0, 0, 0) !important;
+}
+
+.titulos{
+    font-family: youregoneFont;
+    text-align: center;
+    font-size: 22px;
+}
+

@@ -1,11 +1,23 @@
 .botongoole{
     margin: 15px;
-    --ion-background-color: #F3BC1C;
-    color: black;
+    color: rgb(255, 255, 255);
     font-weight: bold;
 }
 
 .icongoogle{
     padding-right: 8px;
-    color: black;
+    color: rgb(255, 255, 255);
+}
+
+.titulos {
+    font-family: youregoneFont;
+    text-align: center;
+    font-size: 22px;
+    margin-top: 15px;
+}
+
+.titulos2 {
+    font-family: youregoneFont;
+    text-align: center;
+    font-size: 15px;
 }

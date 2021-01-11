@@ -14,6 +14,10 @@ const routes: Routes = [
   {
     path: 'nota',
     loadChildren: () => import('./pages/nota/nota.module').then( m => m.NotaPageModule)
+  },
+  {
+    path: 'ayuda',
+    loadChildren: () => import('./pages/ayuda/ayuda.module').then( m => m.AyudaPageModule)
   }
 ];
 @NgModule({

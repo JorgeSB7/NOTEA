@@ -1,0 +1,125 @@
+{
+  "configuracion": {
+    "title": "SETTINGS"
+  },
+  "Usuario": {
+    "title": "User"
+  },
+  "Temas": {
+    "title": "Themes"
+  },
+  "Herramientas": {
+    "title": "Tools"
+  },
+  "Linterna": {
+    "title": "Lantern"
+  },
+  "oscuro": {
+    "title": "Dark Mode"
+  },
+  "marvel": {
+    "title": "Marvel Mode"
+  },
+  "nature": {
+    "title": "Nature Mode"
+  },
+  "Idioma": {
+    "title": "Language"
+  },
+  "IdS": {
+    "title": "Choose language"
+  },
+  "es": {
+    "title": "Spanish"
+  },
+  "en": {
+    "title": "English"
+  },
+  "NuevaN": {
+    "title": "NEW NOTE"
+  },
+  "Titulo": {
+    "title": "Title"
+  },
+  "Fecha": {
+    "title": "Date"
+  },
+  "cancelar": {
+    "title": "cancel"
+  },
+  "confirmar": {
+    "title": "confirm"
+  },
+  "Descripcion": {
+    "title": "Description"
+  },
+  "anadirN": {
+    "title": "Add"
+  },
+  "TabsNotas": {
+    "title": "Notes"
+  },
+  "TabsAnadir": {
+    "title": "Add"
+  },
+  "TabsConfi": {
+    "title": "Settings"
+  },
+  "ListadeNotas": {
+    "title": "NOTES LIST"
+  },
+  "EditarNota": {
+    "title": "EDIT NOTE"
+  },
+  "Modificar": {
+    "title": "MODIFY"
+  },
+  "Noteaintro": {
+    "title": "WELCOME TO NOTEA"
+  },
+  "Noteaintro2": {
+    "title": "YOUR CUSTOMIZABLE NOTES APP"
+  },
+  "CuentaGoogle": {
+    "title": "GOOGLE ACCOUNT"
+  },
+  "BuscarN": {
+    "title": "Search"
+  },
+  "AyudaN": {
+    "title": "HELP"
+  },
+  "AEN": {
+    "title": "Edit Note"
+  },
+  "ABN": {
+    "title": "Delete Note"
+  },
+  "AVN": {
+    "title": "See Note"
+  },
+  "ANN": {
+    "title": "Lantern"
+  },
+  "AEND": {
+    "title": "Swipe note left"
+  },
+  "ABND": {
+    "title": "Swipe note right"
+  },
+  "AVND": {
+    "title": "Click on the note to expand and/or listen"
+  },
+  "ANND": {
+    "title": "You can use the flashlight in 'Add'"
+  },
+  "botonconU": {
+      "title": "WITH LOCATION"
+  },
+  "botoncsinU": {
+      "title": "WITHOUT LOCAT."
+  },
+  "botonmodi": {
+      "title": "MODIFY"
+  }
+}

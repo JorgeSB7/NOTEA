@@ -1,0 +1,38 @@
+.borderboton {
+    --border-color: var(--ion-toolbar-background) !important;
+    color: var(--ion-toolbar-background) !important;
+    margin: 15px;
+    font-family: gnuolaneFont;
+    font-size: 16px;
+}
+
+.titulos {
+    font-family: youregoneFont;
+    text-align: center;
+    margin-top: 3px;
+    font-size: 22px;
+}
+
+ion-header {
+    margin-bottom: 15px;
+}
+
+ion-item {
+    margin-left: 14px;
+    margin-right: 14px;
+}
+
+.guardaCon {
+    margin-top: 20px;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+.botonG {
+    font-family: youregoneFont;
+    font-size: 12px;
+}
+
+.botonI {
+    padding-right: 5px;
+}

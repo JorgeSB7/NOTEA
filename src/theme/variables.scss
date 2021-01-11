@@ -74,6 +74,73 @@
   --ion-color-light-contrast-rgb: 0, 0, 0;
   --ion-color-light-shade: #d7d8da;
   --ion-color-light-tint: #f5f6f9;
+
+  //___________________________________________________TEMAS PROPIOS
+    //Color del texto
+    --ion-text-color: rgb(0, 0, 0);
+    //--ion-placeholder-color: ;
+    //Color del fondo
+    --ion-background-color: rgb(255, 255, 255);
+    //Zona superior (toolbar)
+    --ion-toolbar-background:#070c50;
+    --ion-toolbar-border-color: rgb(0, 0, 173);
+    --ion-toolbar-color: rgb(255, 255, 255);
+    //Zona inferior (tab-bar)
+    --ion-tab-bar-background:#070c50;
+    --ion-tab-bar-border-color:#ffffff;
+    --ion-tab-bar-color-selected: #77b5e9;
+    --ion-tab-bar-color: rgb(255, 255, 255);
+
+  .dark-theme {
+    //Color del texto
+    --ion-text-color: #d8d4c6;
+    --ion-placeholder-color: rgb(204, 204, 204);
+    //Color del fondo
+    --ion-background-color: rgb(49, 49, 49);
+    //Zona superior (toolbar)
+    --ion-toolbar-background:#000000;
+    --ion-toolbar-border-color: #1694ce;
+    --ion-toolbar-color: #d8d4c6;
+    //Zona inferior (tab-bar)
+    --ion-tab-bar-background:#000000;
+    --ion-tab-bar-border-color:#d8d4c6;
+    --ion-tab-bar-color-selected: #FFC409;
+    --ion-tab-bar-color: rgb(204, 204, 204);
+  }
+
+  .marvel-theme {
+    //Color del texto
+    --ion-text-color: rgb(0, 0, 0);
+    //--ion-placeholder-color: ;
+    //Color del fondo
+    --ion-background-color: rgb(255, 255, 255);
+    //Zona superior (toolbar)
+    --ion-toolbar-background:#00488b;
+    --ion-toolbar-border-color: rgb(0, 0, 173);
+    --ion-toolbar-color: rgb(255, 255, 255);
+    //Zona inferior (tab-bar)
+    --ion-tab-bar-background:#680000;
+    --ion-tab-bar-border-color:#ffffff;
+    --ion-tab-bar-color-selected: #f5af54;
+    --ion-tab-bar-color: rgb(255, 255, 255);
+  }
+  
+  .nature-theme {
+    --ion-text-color: rgb(0, 0, 0);
+    //--ion-placeholder-color: ;
+    //Color del fondo
+    --ion-background-color: rgb(255, 255, 255);
+    //Zona superior (toolbar)
+    --ion-toolbar-background:#285e3a;
+    --ion-toolbar-border-color: rgb(0, 0, 173);
+    --ion-toolbar-color: rgb(255, 255, 255);
+    //Zona inferior (tab-bar)
+    --ion-tab-bar-background:#285e3a;
+    --ion-tab-bar-border-color:#ffffff;
+    --ion-tab-bar-color-selected: #4feeb9;
+    --ion-tab-bar-color: rgb(255, 255, 255);
+  }
+  //___________________________________________________TEMAS PROPIOS
 }
 
 @media (prefers-color-scheme: dark) {
