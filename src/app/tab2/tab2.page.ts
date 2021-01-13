@@ -18,6 +18,9 @@ import { ToastService } from '../services/toast.service';
 export class Tab2Page {
 
   public task: FormGroup;
+  latitude = 0;
+  longitude = 0;
+
   constructor(private formBuilder: FormBuilder,
     private flashlight: Flashlight,
     private notasS: NotasService,
@@ -70,13 +73,21 @@ export class Tab2Page {
   //__________________________________________________________UBICACIÓN
   public async sendUbi() {
     await this.toastS.presentLoading();
-    await this.ubiS.getPosition();
+
+
+    await this.ubiS.getPosition().then((resp) => {
+      this.latitude=resp.coords.latitude
+      this.longitude=resp.coords.longitude
+     }).catch((error) => {
+       console.log('Error getting location', error);});
+    
+    
     let data: Nota = {
       titulo: this.task.get('title').value,
       texto: this.task.get('description').value,
       fecha: this.task.get('date').value,
-      latitude: this.ubiS.latitude,
-      longitude: this.ubiS.longitude
+      latitude: this.latitude,
+      longitude: this.longitude
     }
 
     this.notasS.agregaNota(data).then((respuesta) => {

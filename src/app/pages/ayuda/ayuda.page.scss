@@ -15,6 +15,16 @@ ion-button {
     margin-left: 15px;
 }
 
+.borderRow {
+    border-radius: 0% !important;
+    //width: 50px !important;
+    //height: 50px !important;
+    border: 2px solid var(--ion-toolbar-border-color) !important;
+    margin-top: 10px;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
 .TN {
     text-align: left;
     font-weight: bold;

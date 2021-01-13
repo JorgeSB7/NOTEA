@@ -32,7 +32,8 @@
     <ion-list-header>{{'Idioma.title' | translate}}</ion-list-header>
     <ion-item class="itemI">
       <ion-icon name="language-sharp" class="iconT3"></ion-icon>
-      <ion-select placeholder="{{'IdS.title' | translate}}" [(ngModel)]="lang" (ionChange)="changeLng($event)" interface="popover">
+      <ion-select placeholder="{{'IdS.title' | translate}} ({{Langselec}})" [(ngModel)]="lang" (ionChange)="changeLng($event)" 
+      interface="alert" okText="{{'confirmar.title' | translate}}" cancelText="{{'cancelar.title' | translate}}">
         <ion-select-option value="es">{{'es.title' | translate}}</ion-select-option>
         <ion-select-option value="en">{{'en.title' | translate}}</ion-select-option>
       </ion-select>

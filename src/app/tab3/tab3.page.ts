@@ -81,6 +81,8 @@ export class Tab3Page implements OnInit {
   //__________________________________________________________Temas
 
   //__________________________________________________________Cambiar idioma
+  Langselec = this.language.selected;
+
   changeLng($event) {
     this.language.setLanguage($event.target.value);
     console.log($event.target.value);
