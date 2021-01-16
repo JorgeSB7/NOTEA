@@ -81,7 +81,6 @@ export class Tab2Page {
      }).catch((error) => {
        console.log('Error getting location', error);});
     
-    
     let data: Nota = {
       titulo: this.task.get('title').value,
       texto: this.task.get('description').value,
